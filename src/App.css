@@ -1,0 +1,307 @@
+@import url("https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&display=swap");
+* {
+  font-family: "Amiri", serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 5px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+header h1 {
+  display: inline-block;
+  margin-right: 5px;
+  color: #a7a8a7;
+}
+header i {
+  font-size: 32px;
+  color: #a7a8a7;
+}
+/* times */
+.tables {
+  direction: rtl;
+  min-height: 100vh;
+  background-image: url("./assets/bg.jpg");
+  background-size: cover;
+  position: relative;
+}
+.tables::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(62 62 62 / 8%);
+  z-index: -1;
+}
+.tables header h1,
+.tables header i,
+.tables .main h2 {
+  color: #3d2e1f;
+}
+.main-table {
+  padding-top: 60px;
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+  justify-content: space-around;
+}
+.main-table .table .info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-table .next-prayer p {
+  color: #46321e;
+  font-size: 20px;
+}
+.main-table .next-prayer h2 {
+  color: #2b1e10;
+  text-align: center;
+  font-size: 24px;
+}
+.main-table .city-name {
+  color: #46321e;
+  font-size: 35px;
+}
+.main-table .date {
+  color: #2b1e10;
+  font-size: 22x;
+}
+.main-table .times {
+  max-width: 500px;
+  margin: 10px auto;
+}
+.main-table .pray {
+  justify-content: space-between;
+  display: flex;
+  height: 60px;
+  align-items: center;
+  margin: 0 0 8px;
+}
+.main-table .pray i {
+  height: 45px;
+  background-color: #654b3e;
+  width: 45px;
+  font-size: 30px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  border-radius: 5px;
+  box-shadow: rgb(0 0 0 / 52%) 0px 0px 6px;
+}
+.main-table .pray .pray-name {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 211, 151, 1) 44%,
+    rgba(164, 129, 94, 1) 100%
+  );
+  height: 45px;
+  text-align: right;
+  display: flex;
+  align-items: center;
+  width: 350px;
+  font-size: 26px;
+  margin: 0 5px;
+  color: #332722;
+  padding-right: 10px;
+  border-radius: 5px;
+  box-shadow: rgb(0 0 0 / 52%) 0px 0px 6px;
+}
+.main-table .pray .pray-time {
+  flex-basis: 25%;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  background-color: #654b3e;
+  font-weight: bold;
+  color: #fbe5c2;
+  border-radius: 5px;
+  box-shadow: rgb(0 0 0 / 52%) 0px 0px 6px;
+}
+.main-table .city {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+}
+.main-table .city label {
+  font-size: 22px;
+  margin-bottom: 6px;
+  color: #46321e;
+}
+.main-table .city select {
+  width: 200px;
+  min-width: 120px;
+  border-radius: 3px;
+  background-color: #ffffff54;
+  padding: 0px 2px;
+  font-size: 18px;
+}
+@media (max-width: 1053px) {
+  .tables::before {
+    display: none;
+  }
+}
+@media (max-width: 1024px) {
+  .tables .main-table .image img {
+    width: 450px;
+    height: 500px;
+  }
+}
+@media (max-width: 960pxpx) {
+  .tables .main-table .image img {
+    max-width: 400px;
+    max-height: 500px;
+  }
+}
+@media (max-width: 768px) {
+  .tables .main-table {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .main-table .city {
+    margin: auto;
+  }
+  .tables .main-table .image img {
+    position: relative;
+    top: -85px;
+  }
+  .tables header {
+    padding: 0 30px;
+  }
+  .main-table .info {
+    justify-content: space-around !important;
+  }
+  .tables::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(62 62 62 / 8%);
+    z-index: -1;
+  }
+}
+@media (max-width: 649px) {
+  .container .holder a {
+    margin: 10px auto;
+  }
+  .tables header {
+    padding: 0 20px;
+  }
+  .main-table .pray {
+    justify-content: center !important;
+    gap: 5px;
+  }
+  /* .main-table .pray .pray-name {
+    width: 240px;
+  } */
+}
+@media (max-width: 540px) {
+  .tables header {
+    padding: 0 10px;
+  }
+  header h1 {
+    font-size: 25px;
+  }
+  .main-table .pray .pray-time {
+    flex-basis: 20% !important;
+  }
+}
+@media (max-width: 540px) {
+  .main-table .pray .pray-time {
+    flex-basis: 16% !important;
+  }
+  .main-table .pray .pray-name {
+    width: 230px;
+  }
+}
+@media (max-width: 470px) {
+  .tables::before {
+    display: none;
+  }
+  .main-table .image img {
+    max-width: 400px;
+  }
+}
+@media (max-width: 425px) {
+  .main-table .city-name {
+    font-size: 32px;
+  }
+  .main-table .pray .pray-time {
+    font-size: 18px;
+  }
+  .main-table .pray .pray-name {
+    width: 210px;
+  }
+}
+@media (max-width: 375px) {
+  .main-table .pray .pray-time {
+    flex-basis: 18% !important;
+  }
+  .main-table .pray .pray-name {
+    width: 190px;
+    font-size: 24px;
+  }
+}
+@media (max-width: 320px) {
+  .main-table .pray .pray-time {
+    flex-basis: 20% !important;
+  }
+  .main-table .city label {
+    font-size: 20px;
+  }
+  .main-table .city select {
+    width: 120px;
+  }
+  .main-table .city-name {
+    font-size: 30px;
+  }
+  .main-table .next-prayer p {
+    font-size: 18px;
+  }
+  .main-table .pray {
+    gap: 2px;
+  }
+  .main-table .pray .pray-name {
+    width: 180px;
+  }
+}
+@media (max-width: 225px) {
+  .container header i,
+  .container header h1 {
+    font-size: 25px;
+  }
+}
